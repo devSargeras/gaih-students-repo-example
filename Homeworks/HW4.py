@@ -27,7 +27,7 @@ class Hangman:
 
                 sayac += 1
 
-    def yaz_kelimeleri(self, word_list):
+    def yaz_kelimeleri(self):
         for character in self.dogru_karakterler:
             print(character, end=" ")
         print()
@@ -40,7 +40,7 @@ class Hangman:
             tahmin_karakteri = input("Tahmin:")
             self.karsilastir_karakter(tahmin_karakteri)
             self.adam_ciz()
-            self.yaz_kelimeleri(self.dogru_karakterler)
+            self.yaz_kelimeleri()
 
         else:
             print("Tahmin hakkınız bitmiştir. Adam asıldı.")
